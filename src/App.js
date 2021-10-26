@@ -6,7 +6,6 @@ import Alert from './components/Alert';
 import {
   BrowserRouter as Router,
   Switch,
-  Redirect,
   Route} from "react-router-dom";
 
 function App() {
@@ -45,7 +44,6 @@ function App() {
           <Route exact path="/about">
             <About mode={mode} />
           </Route>
-          <Redirect from = "/textutils" to = "/" />
           <Route exact path="/">
           <TextForm heading ="Enter the Text to analyze below" showAlert={showAlert} mode={mode} />
           </Route>
